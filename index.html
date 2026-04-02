@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EAO Creatives</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header id="navbar">
+    <div class="logo">
+       
+        <span>EAO Creatives</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Grow Your Brand with <span>AI-Powered Content</span></h1>
+        <p>We create premium visuals that attract, engage and convert.</p>
+        <a href="#contact"><button>Get Started 🚀</button></a>
+    </div>
+
+    <div class="hero-img">
+       
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+
+    <p>
+        At <strong>EAO Creatives</strong>, we help small brands turn ideas into powerful digital experiences. 
+        Our goal is simple — to make your brand stand out in today’s competitive online world.
+    </p>
+
+    <p>
+        We specialize in creating <strong>high-quality visuals, engaging content, and AI-powered marketing strategies</strong> 
+        that attract attention and drive real results. Whether you're a startup or a growing business, 
+        we provide solutions that are both <strong>affordable and impactful</strong>.
+    </p>
+
+    <p>
+        With a strong focus on creativity and innovation, we ensure every project reflects your brand identity 
+        while delivering maximum reach and engagement.
+    </p>
+
+    <div class="about-box">
+        <div>
+            <h3>🚀 Our Mission</h3>
+            <p>To help brands grow faster using smart, creative, and AI-driven content.</p>
+        </div>
+
+        <div>
+            <h3>🎯 Our Vision</h3>
+            <p>To become a leading creative agency known for innovation and results.</p>
+        </div>
+    </div>
+</section>
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">📱 Social Media</div>
+        <div class="card">🎥 UGC Content</div>
+        <div class="card">🛍️ Product Visuals</div>
+        <div class="card">🤖 AI Marketing</div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<!-- CONTACT --><div class="social">
+    <a href="https://instagram.com/eao.creatives" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+</div>
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>📞 <a href="tel:9322928757">+91 9322928757</a></p>
+    <p>📧 <a href="mailto:contact.everythingatonce849@gmail.com">
+        contact.everythingatonce849@gmail.com
+    </a></p>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 EAO Creatives</p>
+</footer>
+
+<script>
+// Smooth scroll (extra smooth)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+// Gallery images
+const images = [
+    
+    "images/img1.jpeg",
+    "images/img2.jpeg",
+    "images/img3.jpeg",
+    "images/img4.jpeg",
+    "images/img5.jpeg",
+    "images/img6.jpeg",
+    "images/img7.jpeg",
+];
+
+const gallery = document.getElementById("galleryGrid");
+
+images.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+
+    img.onclick = () => {
+        const popup = document.createElement("div");
+        popup.classList.add("popup");
+
+        const bigImg = document.createElement("img");
+        bigImg.src = src;
+
+        popup.appendChild(bigImg);
+        popup.onclick = () => popup.remove();
+
+        document.body.appendChild(popup);
+    };
+
+    gallery.appendChild(img);
+});
+</script>
+
+</body>
+</html>
