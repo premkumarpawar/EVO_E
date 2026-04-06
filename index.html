@@ -1,160 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EAO Creatives</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAO Creatives | AI-Powered Content & Social Media Growth</title>
+    <meta name="description" content="EAO Creatives helps brands grow with AI-powered content, social media strategies, and stunning visuals. Boost your business today!">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EAO Creatives | AI-Powered Content & Social Media Growth">
+    <meta property="og:description" content="We create engaging content to boost your business 🚀">
+    <meta property="og:url" content="https://eaocreatives.com">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/6366f1/ffffff?text=EAO+Creatives">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EAO Creatives | AI-Powered Content & Social Media Growth">
+    <meta name="twitter:description" content="We create engaging content to boost your business 🚀">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/6366f1/ffffff?text=EAO+Creatives">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
 <body>
-
-<!-- NAVBAR -->
-<header id="navbar">
-    <div class="logo">
-       
-        <span>EAO Creatives</span>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="rocket"><i class="fas fa-rocket"></i></div>
     </div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<!-- HERO -->
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Grow Your Brand with <span>AI-Powered Content</span></h1>
-        <p>We create premium visuals that attract, engage and convert.</p>
-        <a href="#contact"><button>Get Started 🚀</button></a>
-    </div>
-
-    <div class="hero-img">
-       
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Us</h2>
-
-    <p>
-        At <strong>EAO Creatives</strong>, we help small brands turn ideas into powerful digital experiences. 
-        Our goal is simple — to make your brand stand out in today’s competitive online world.
-    </p>
-
-    <p>
-        We specialize in creating <strong>high-quality visuals, engaging content, and AI-powered marketing strategies</strong> 
-        that attract attention and drive real results. Whether you're a startup or a growing business, 
-        we provide solutions that are both <strong>affordable and impactful</strong>.
-    </p>
-
-    <p>
-        With a strong focus on creativity and innovation, we ensure every project reflects your brand identity 
-        while delivering maximum reach and engagement.
-    </p>
-
-    <div class="about-box">
-        <div>
-            <h3>🚀 Our Mission</h3>
-            <p>To help brands grow faster using smart, creative, and AI-driven content.</p>
+    <!-- NAVBAR -->
+    <header class="navbar" role="banner">
+        <div class="logo" role="img" aria-label="EAO Creatives Logo">🚀 EAO Creatives</div>
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#gallery" class="nav-link">Work</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </header>
 
-        <div>
-            <h3>🎯 Our Vision</h3>
-            <p>To become a leading creative agency known for innovation and results.</p>
+    <!-- HERO -->
+    <section id="home" class="hero" role="main" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <h1 id="hero-title">Grow Your Brand with <span>AI Content</span></h1>
+            <p>We create engaging content to boost your business <i class="fas fa-rocket"></i></p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-secondary">View Services</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        EAO Creatives helps brands grow using <strong>AI-powered content</strong>,
+                        social media strategies, and creative visuals. We combine cutting-edge 
+                        technology with human creativity to deliver results that matter.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Content Pieces</p>
+                        </div>
+                        <div class="stat">
+                            <h3>300%</h3>
+                            <p>Avg Growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" tabindex="0">
+                    <div class="service-icon">📱</div>
+                    <h3>Social Media Content</h3>
+                    <p>Engaging posts, stories, and reels that grow your audience</p>
+                </div>
+                <div class="service-card" tabindex="0">
+                    <div class="service-icon">🎥</div>
+                    <h3>UGC Content</h3>
+                    <p>Authentic user-generated content that converts</p>
+                </div>
+                <div class="service-card" tabindex="0">
+                    <div class="service-icon">🛍️</div>
+                    <h3>Product Visuals</h3>
+                    <p>Stunning product photography and lifestyle images</p>
+                </div>
+                <div class="service-card" tabindex="0">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI Marketing</h3>
+                    <p>AI-driven strategies for maximum ROI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+   <!-- GALLERY -->
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <h2>Our Work</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/img1.jpeg" alt="Social media content campaign" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Social Media Campaign</h4>
+                    <p>Engaging posts that drive results</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img2.jpeg" alt="UGC video content production" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>UGC Content</h4>
+                    <p>Authentic content that converts</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img3.jpeg" alt="Product photography showcase" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Product Visuals</h4>
+                    <p>Stunning e-commerce photography</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img4.jpeg" alt="AI generated marketing visuals" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>AI Marketing</h4>
+                    <p>Cutting-edge AI-powered campaigns</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img5.jpeg" alt="Brand social media strategy" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Brand Strategy</h4>
+                    <p>Complete social media growth</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img6.jpeg" alt="E-commerce product visuals" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>E-commerce Visuals</h4>
+                    <p>Product images that sell</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/img7.jpeg" alt="Content marketing campaign" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Content Campaign</h4>
+                    <p>Viral content that grows brands</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<!-- SERVICES -->
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="cards">
-        <div class="card">📱 Social Media</div>
-        <div class="card">🎥 UGC Content</div>
-        <div class="card">🛍️ Product Visuals</div>
-        <div class="card">🤖 AI Marketing</div>
-    </div>
-</section>
 
-<!-- GALLERY -->
-<section id="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery-grid" id="galleryGrid"></div>
-</section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p class="section-subtitle">Ready to grow your brand? Get in touch today!</p>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+                    <span class="error-message" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                    <span class="error-message" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required aria-label="Your Message"></textarea>
+                    <span class="error-message" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i> Sending...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
 
-<!-- CONTACT --><div class="social">
-    <a href="https://instagram.com/eao.creatives" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-    </a>
-</div>
-<section id="contact">
-    <h2>Contact Us</h2>
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">🚀 EAO Creatives</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 EAO Creatives. All Rights Reserved | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
-    <p>📞 <a href="tel:9322928757">+91 9322928757</a></p>
-    <p>📧 <a href="mailto:contact.everythingatonce849@gmail.com">
-        contact.everythingatonce849@gmail.com
-    </a></p>
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling and navbar functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Loader
+            window.addEventListener('load', () => {
+                document.querySelector('.loader').style.opacity = '0';
+                setTimeout(() => document.querySelector('.loader').style.display = 'none', 500);
+            });
 
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button>Send Message</button>
-    </form>
-</section>
+            // Navbar scroll effects
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
 
-<footer>
-    <p>© 2026 EAO Creatives</p>
-</footer>
+                // Active nav link
+                const sections = document.querySelectorAll('section');
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (scrollY >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
 
-<script>
-// Smooth scroll (extra smooth)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href"))
-            .scrollIntoView({ behavior: "smooth" });
-    });
-});
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('nav');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
 
-// Gallery images
-const images = [
-    
-    "images/img1.jpeg",
-    "images/img2.jpeg",
-    "images/img3.jpeg",
-    "images/img4.jpeg",
-    "images/img5.jpeg",
-    "images/img6.jpeg",
-    "images/img7.jpeg",
-];
+            // Form validation and submission
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const submitBtn = form.querySelector('button');
+                const btnText = submitBtn.querySelector('.btn-text');
+                const btnLoading = submitBtn.querySelector('.btn-loading');
 
-const gallery = document.getElementById("galleryGrid");
+                // Simple client-side validation
+                const email = formData.get('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    showError('email', 'Please enter a valid email address');
+                    return;
+                }
 
-images.forEach(src => {
-    const img = document.createElement("img");
-    img.src = src;
+                // Show loading
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline-block';
 
-    img.onclick = () => {
-        const popup = document.createElement("div");
-        popup.classList.add("popup");
+                try {
+                    // Simulate API call (replace with your backend)
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                    
+                    // Reset form
+                    form.reset();
+                    alert('Thank you! Your message has been sent. We\'ll get back to you soon! 🚀');
+                } catch (error) {
+                    alert('Oops! Something went wrong. Please try again.');
+                } finally {
+                    btnText.style.display = 'inline';
+                    btnLoading.style.display = 'none';
+                }
+            });
 
-        const bigImg = document.createElement("img");
-        bigImg.src = src;
-
-        popup.appendChild(bigImg);
-        popup.onclick = () => popup.remove();
-
-        document.body.appendChild(popup);
-    };
-
-    gallery.appendChild(img);
-});
-</script>
-
+            function showError(fieldId, message) {
+                const field = document.getElementById(fieldId);
+                const error = field.parentNode.querySelector('.error-message');
+                error.textContent = message;
+                field.classList.add('error');
+                setTimeout(() => {
+                    error.textContent = '';
+                    field.classList.remove('error');
+                }, 5000);
+            }
+        });
+    </script>
 </body>
 </html>
