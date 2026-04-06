@@ -316,7 +316,3 @@ if ('serviceWorker' in navigator) {
 }
 
 console.log('🚀 EAO Creatives - Fully Loaded & Ready!');
-</script>
-
-</body>
-</html>
